@@ -5,6 +5,6 @@ document.getElementById('calculate').addEventListener('click', function() {
   
     const simpleInterest = (principal * rate * time) / 100;
     
-    document.getElementById('result').textContent = `Simple Interest: ${simpleInterest.toFixed(2)}`;
+    document.getElementById('result').textContent = `Simple Interest: {simpleInterest.toFixed(2)}`;
   });
   
