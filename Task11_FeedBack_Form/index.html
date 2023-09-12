@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="./feedbackform.css">
+
+</head>
+
+<body>
+    <h2>Feedback Form</h2>
+    <form method="post">
+        <b>First Name:</b> <input type="text" name="firstname" placeholder="Entre the First name here">
+        <br>
+        <br>
+        <b>Last Name:</b> <input type="text" name="lastname" placeholder="Entre the Last name here">
+        <br><br>
+        <b>Gender :</b>
+        <div class="option">
+            <input id="male" type="radio" name="gender">
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="gender">
+            <label for="female">Female</label>
+            <input id="other" type="radio" name="gender" checked>
+            <label for="other">Other</label>
+        </div>
+        <br>
+        <b>Email :</b> <input type="email" name="email" placeholder="Enter email here">
+        <br><br>
+        <label for="issue">Write your issue here</label>
+        <br>
+        <!-- Write Issue here: -->
+        <textarea id="issue" name="issue" rows="5" cols="50" style="resize:none ;"></textarea>
+        <br>
+        <br>
+        <label for="feature">What are the features you want to add</label>
+        <br>
+        <input type="checkbox" id="uiux" name="feature" value="UI/UX">
+        <label for="uiux">UI/UX</label>
+        <input type="checkbox" id="loadtime" name="feature" value="LoadTime">
+        <label for="loadtime">Load Time</label>
+        <input type="checkbox" id="functionality" name="feature" value="Functionality">
+        <label for="functionality">Functionality</label>
+        <br>
+        <br>
+        <label for="issuetype" name="issuetype">Select issue type</label>
+        <br>
+        <select id="issuetype" form="issuetype" name="issuetype" style="width: 200px;">
+            <option value="compiler">Compiler Problem</option>
+            <option value="Run">Code Runner Problem</option>
+            <option value="Bug">Internal bug</option>
+            <option value="hardware">Hardware Problem</option>
+        </select>
+        <br>
+        <br>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+    <script src="./feedbackform.js"> </script>
+</body>
+
+</html>
